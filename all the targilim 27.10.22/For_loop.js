@@ -126,6 +126,7 @@ function myFun3(arr , x){
         if (sum >= x){
             return sum
         }
+        sum += arr[i]
     }
 }
 
