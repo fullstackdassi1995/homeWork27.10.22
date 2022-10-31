@@ -123,12 +123,10 @@ return the sum.*/
 function myFun3(arr , x){
     let sum = 0
     for (let i in arr){
-        sum += arr[i]
+        if (sum >= x){
+            return sum
+        }
     }
-    while(sum <= x){
-        sum += sum + 1
-    }
-    console.log(sum)
 }
 
 /*Ex9:
